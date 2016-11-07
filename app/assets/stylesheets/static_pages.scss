@@ -1,3 +1,27 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Footer *********************************************/
+footer {
+	text-align: right;
+	border-top: 1px dotted gray;
+	margin-top: 1em;
+	padding-top: .5em;
+	padding-right: 1em;
+}
+
+/* Typography *****************************************/
+h1 {
+	color: #565747;
+	font-style: "Helvetica, sans-serif";
+	text-align: center;
+}
+
+h2 {
+	color: #565747;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+
