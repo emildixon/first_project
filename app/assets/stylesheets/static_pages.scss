@@ -2,6 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* Body Content ***************************************/
+.body-content {
+	text-align: center;
+	padding-top: 2em;
+}
+
+.dog-pic {
+	display: block;
+	margin: auto;
+}
+
+.contact-info {
+	border: 1px dotted gray;
+	border-radius: 5px;
+}
+
 /* Footer *********************************************/
 footer {
 	text-align: right;
