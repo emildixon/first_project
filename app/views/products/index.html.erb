@@ -6,7 +6,7 @@
 <div class="container">
   <div class="row">
     <% @products.each do |product| %>
-      <div class="col-sm-6 col-lg-4 product-view">
+      <div class="col-sm-8 col-md-8 col-lg-4 product-view">
         <%= image_tag(product.image_url, class: "img-responsive") %>
         <h4><%= product.name %></h4>
         <p><strong>Price: </strong>$<%= product.price %></p>
@@ -19,10 +19,10 @@
           <span> <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></span>
         </div><!-- /.product-edit-links -->
       </div><!-- /.col -->
+      <div class="clearfix visible-md-block visible-sm-block"></div>
     <% end %>
   </div><!-- /.row -->
 </div><!-- /.container -->  
-
 
 <br>
 
