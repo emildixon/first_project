@@ -1,0 +1,14 @@
+<div class="col-sm-8 col-md-8 col-lg-4 product-view">
+  <%= image_tag(product.image_url, class: "img-responsive") %>
+  <h4><%= product.name %></h4>
+  <p><strong>Price: </strong>$<%= product.price %></p>
+  <p><strong>Colour: </strong><%= product.colour %></p>
+  <p><strong>Description: </strong><%= product.description %></p>
+  <div class="product-edit-links">
+    <span><strong>Edit this product: </strong></span>
+    <span> <%= link_to 'Show', product %> </span>
+    <span> <%= link_to 'Edit', edit_product_path(product) %> </span>
+    <span> <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+  </div><!-- /.product-edit-links -->
+</div><!-- /.col -->
+<div class="visible-md-block visible-sm-block"></div>

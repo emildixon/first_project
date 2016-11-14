@@ -1,5 +1,65 @@
-<h2>Featured Product:</h2>
-<div class = "featured-product">
-  <p><strong><%= @featured_product.name %></strong></p>
-  <p><%= image_tag(@featured_product.image_url, height: "33%", width: "33%") %></p>
-</div><!-- /.featured-product -->
+
+
+<!-- Create Image Carousel with Autopopulated Products -->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <% @products.each do |counter| %>
+      <li data-target="#carousel-example-generic" data-slide-to="<%= counter %>" class="<%= " active" if counter == @products.first %>"></li>
+    <% end %>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <% @products.each do |product| %>
+    <div class="item <%= " active" if product == @products.first %>">
+      <%= image_tag(product.image_url) %>
+      <div class="carousel-caption">
+        <h3><strong><%= product.name %></strong></h3>
+      </div>
+    </div>
+    <% end %>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
