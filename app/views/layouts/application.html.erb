@@ -26,10 +26,10 @@
         <div class="navbar-header">
           <!-- Create Search Bar -->
           <%= form_tag("/products", method: "get", class: "navbar-form navbar-left") do %>
-          <div class="form-group"> 
-            <%= text_field_tag :q, "Search", class: "form-control" %>
-            <%= submit_tag("Search", class: "btn btn-default") %>
-          </div><!-- /.form-group -->
+            <div class="form-group"> 
+              <%= text_field_tag :q, "Search", class: "form-control" %>
+              <%= submit_tag("Search", class: "btn btn-default") %>
+            </div><!-- /.form-group -->
           <% end %>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#first-project-navbar" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
