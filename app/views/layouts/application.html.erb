@@ -58,8 +58,12 @@
     </nav>
 
     <!-- Add required Devise flash notices for authentication -->
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% if notice %>
+      <div class="notice alert-warning" role="alert"><%= notice %></div>
+    <% end %>
+    <% if alert %>
+      <div class="alert alert-warning" role="alert"><%= alert %></div>
+    <% end %>
 
     <%= yield %>
     
