@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <%= image_tag(@product.image_url, class: "img-responsive show-img") %>
+    </div><!-- ./col-md-5 -->
+    <div class="col-md-5">
+      <p>
+        <strong>Name:</strong>
+        <%= @product.name %>
+      </p>
+      <p>
+        <strong>Description:</strong>
+        <%= @product.description %>
+      </p>
+      <p>
+        <strong>Colour:</strong>
+        <%= @product.colour %>
+      </p>
+      <p>
+        <strong>Price:</strong>
+        <%= number_to_currency(@product.price) %>
+      </p>
+    </div><!-- ./col-md-5 -->
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
+
+
+  
