@@ -1,26 +1,27 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-5">
+    <div class="col-md-6">
       <%= image_tag(@product.image_url, class: "img-responsive show-img") %>
-    </div><!-- ./col-md-5 -->
-    <div class="col-md-5">
-      <p>
+    </div><!-- ./col-md-6 -->
+    <div class="col-md-6">
+      <div>
         <strong>Name:</strong>
         <%= @product.name %>
-      </p>
-      <p>
+      </div><br>
+      <div>
         <strong>Description:</strong>
         <%= @product.description %>
-      </p>
-      <p>
+      </div><br>
+      <div>
         <strong>Colour:</strong>
         <%= @product.colour %>
-      </p>
-      <p>
+      </div><br>
+      <div>
         <strong>Price:</strong>
         <%= number_to_currency(@product.price) %>
-      </p>
-    </div><!-- ./col-md-5 -->
+      </div><br>
+      <div><strong>Average Rating: </strong> <span class="rated" data-score="<%= product.average_rating %>"></span></div>
+    </div><!-- ./col-md-6 -->
   </div><!-- /.row -->
 </div><!-- /.container -->
 

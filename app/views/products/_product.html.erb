@@ -5,6 +5,7 @@
   <p><strong>Price: </strong><%= number_to_currency(product.price) %></p>
   <p><strong>Colour: </strong><%= product.colour %></p>
   <p><strong>Description: </strong><%= product.description %></p>
+  <p><strong>Average Rating: </strong> <span class="rated" data-score="<%= product.average_rating %>"></span></p>
   <div class="product-edit-links">
     <span><strong>Edit this product: </strong></span>
     <span> <%= link_to 'Show', product %> </span>

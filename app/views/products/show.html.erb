@@ -4,5 +4,22 @@
   <%= render 'show', product: @product %>
 </div><!-- /.display-product -->
 
+<div class="container product-comments">
+  <div class="row">
+    <div class="col-md-6">
+      <div>
+        <%= render 'new_comment' %>
+      </div>
+    </div><!-- /.col-md-6 -->
+    <div class="col-md-6">
+      <div>
+        <%= render 'comments' %>
+      </div>
+    </div><!-- /.col-md-6 -->
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
+<br>
+
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
