@@ -3,10 +3,10 @@
   <% @comments.each do |comment| %>
     <div class="row">
       <hr>
-      <p><%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small></p>
+      <div><%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small></div>
       
-      <p>Rating:<span class="rated" data-score="<%= comment.rating %>"></span></p>
-      <p><%= comment.body %></p>
+      <div>Rating:<span class="rated" data-score="<%= comment.rating %>"></span></div>
+      <div><%= comment.body %></div>
     </div>
   <% end %>
 </div>
