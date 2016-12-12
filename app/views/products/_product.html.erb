@@ -7,10 +7,12 @@
   <p><strong>Description: </strong><%= product.description %></p>
   <p><strong>Average Rating: </strong> <span class="rated" data-score="<%= product.average_rating %>"></span></p>
   <div class="product-edit-links">
-    <span><strong>Edit this product: </strong></span>
+    <span><strong>Product Options: </strong></span>
     <span> <%= link_to 'Show', product %> </span>
-    <span> <%= link_to 'Edit', edit_product_path(product) %> </span>
-    <span> <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+    <% if signed_in? && current_user.admin? %>
+      <span> <%= link_to 'Edit', edit_product_path(product) %> </span>
+      <span> <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+    <% end %>
   </div><!-- /.product-edit-links -->
 </div><!-- /.col -->
 <div class="visible-md-block visible-sm-block"></div>
