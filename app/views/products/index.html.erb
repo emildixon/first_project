@@ -11,7 +11,10 @@
 
 <br>
 
-<strong><%= link_to 'New Product', new_product_path %></strong>
+<% if signed_in? && current_user.admin? %>
+  <strong><%= link_to 'New Product', new_product_path %></strong>
+<% end %>
+
 
 
 
