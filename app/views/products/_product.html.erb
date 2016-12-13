@@ -1,6 +1,6 @@
 <!-- Display Products in a Grid -->
 <div class="col-sm-8 col-md-8 col-lg-4 product-view">
-  <%= image_tag(product.image_url, class: "img-responsive") %>
+  <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
   <h4><%= product.name %></h4>
   <p><strong>Price: </strong><%= number_to_currency(product.price) %></p>
   <p><strong>Colour: </strong><%= product.colour %></p>
