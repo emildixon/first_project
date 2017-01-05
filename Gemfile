@@ -34,6 +34,7 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
 	gem 'sqlite3'
   gem 'rspec-rails', '~> 3.5'
+  gem 'factory_girl_rails', '~> 4.0'
 end
 
 group :development do
@@ -61,6 +62,8 @@ gem 'cancancan', '~> 1.10'
 gem 'will_paginate', '~> 3.1.1'
 
 gem 'rails-controller-testing'
+
+
 
 
 
