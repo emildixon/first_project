@@ -67,6 +67,8 @@ gem 'stripe'
 
 gem 'brakeman', :require => false
 
+gem 'dalli'
+
 
 
 

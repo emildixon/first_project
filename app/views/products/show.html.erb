@@ -1,3 +1,4 @@
+<% cache @product do %>
 <div class="display-product">
   <%= render 'show', product: @product %>
 </div><!-- /.display-product -->
@@ -17,6 +18,8 @@
     </div><!-- /.col-md-6 -->
   </div><!-- /.row -->
 </div><!-- /.container -->
+
+<% end %>
 
 <br>
 

@@ -1,3 +1,4 @@
+<% cache product do %>
 <!-- Display Products in a Grid -->
 <div class="col-sm-8 col-md-8 col-lg-4 product-view">
   <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
@@ -16,3 +17,4 @@
   </div><!-- /.product-edit-links -->
 </div><!-- /.col -->
 <div class="visible-md-block visible-sm-block"></div>
+<% end %>
