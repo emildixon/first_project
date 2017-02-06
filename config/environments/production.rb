@@ -98,4 +98,6 @@ Rails.application.configure do
     :down_retry_delay => 60
     }
 
+  config.web_socket_server_url = "wss://edixon-first.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https:edixon-first.herokuapp.com', 'http://edixon-first.herokuapp.com']
 end
